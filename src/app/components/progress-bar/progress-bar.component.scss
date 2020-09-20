@@ -1,0 +1,33 @@
+
+
+.progress-container {
+    display: grid;
+    align-items: center;
+    position: relative;
+
+    small {
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        color: white;
+    }
+
+    progress {
+        width: 100%;
+        height: 20px;
+        background-color: #eee;  // daca nu pui asta o sa vezi colturile progress-barului cu o alta culoare, #eee le face transparente    
+        transition: all 1s;
+    }
+
+    // in firefox proprietatile cu ::-webkit-any() nu merg
+    progress[value]::-webkit-progress-value {
+        background-color: #FC00FF;
+        transition: all 3s;
+    }
+
+    progress[value]::-webkit-progress-bar,
+    progress[value]::-webkit-progress-value {
+        border-radius: 20px;
+
+    }
+}

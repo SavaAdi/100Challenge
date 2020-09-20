@@ -11,6 +11,11 @@
 
 <br>
 
+<app-card [iconClasses]="'fas fa-scroll fa-2x'" [title]="'Progress Bar'" [subTitle]="'Components'">
+  <app-progress-bar body [value]="progressValue"></app-progress-bar>>
+  <button footer (click)="progressValue = 75">Update</button>
+</app-card>
+
   <app-card [iconClasses]="'fas fa-scroll fa-2x'" [title]="'Accordion'" [subTitle]="'Components'">
     <app-accordion body [items]="accordionItems"></app-accordion>
   </app-card>
