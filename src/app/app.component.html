@@ -4,27 +4,42 @@
     <li>Directives</li>
     <li>Services</li>
     <li>Pipes</li>
-    <li>Other</li>   
-
+    <li>Other</li>
   </ul>
 </app-toolbar>
 
-<br>
+<br />
 
-<app-card [iconClasses]="'fas fa-scroll fa-2x'" [title]="'Progress Bar'" [subTitle]="'Components'">
+<app-card
+  [iconClasses]="'fas fa-scroll fa-2x'"
+  [title]="'Star Rating'"
+  [subTitle]="'Components'">
+  <app-star-ratings body [rating]="3.5"></app-star-ratings>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-scroll fa-2x'"
+  [title]="'Progress Bar'"
+  [subTitle]="'Components'"
+>
   <app-progress-bar body [value]="progressValue"></app-progress-bar>>
   <button footer (click)="progressValue = 75">Update</button>
 </app-card>
 
-  <app-card [iconClasses]="'fas fa-scroll fa-2x'" [title]="'Accordion'" [subTitle]="'Components'">
-    <app-accordion body [items]="accordionItems"></app-accordion>
-  </app-card>
+<app-card
+  [iconClasses]="'fas fa-scroll fa-2x'"
+  [title]="'Accordion'"
+  [subTitle]="'Components'"
+>
+  <app-accordion body [items]="accordionItems"></app-accordion>
+</app-card>
 
-  <app-card [iconClasses]="'fas fa-scroll fa-2x'" [title]="'Info Card'" [subTitle]="'Components'">
-    <!-- <img body src="https://design-milk.com/images/2020/01/Rooftop-intercontinental-bucharest-Keshia-Design-Milk.jpeg"> -->
-    <p body>Body Content</p>
-    <p footer>Footer Content</p>
-  </app-card>
-
-
-
+<app-card
+  [iconClasses]="'fas fa-scroll fa-2x'"
+  [title]="'Info Card'"
+  [subTitle]="'Components'"
+>
+  <!-- <img body src="https://design-milk.com/images/2020/01/Rooftop-intercontinental-bucharest-Keshia-Design-Milk.jpeg"> -->
+  <p body>Body Content</p>
+  <p footer>Footer Content</p>
+</app-card>
