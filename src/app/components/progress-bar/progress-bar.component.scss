@@ -1,4 +1,4 @@
-
+@import '../../../styles';
 
 .progress-container {
     display: grid;
@@ -21,7 +21,7 @@
 
     // in firefox proprietatile cu ::-webkit-any() nu merg
     progress[value]::-webkit-progress-value {
-        background-color: #FC00FF;
+        background-color: $cool;
         transition: all 3s;
     }
 

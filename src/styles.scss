@@ -5,6 +5,7 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
 * {
+  // this is important for top-of-page component, it will make the trnasition smooth
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
