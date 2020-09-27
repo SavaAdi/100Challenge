@@ -1,3 +1,17 @@
+<h1> Pipes </h1>
+
+<app-card
+  [iconClasses]="'fas fa-scroll fa-2x'"
+  [title]="'Credit Card Formatter Pipe'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <p>{{ '1211212231334414' | creditCardFormatter }}</p>
+    <p>{{ '11112222333344445' | creditCardFormatter }}</p>
+    <p>{{ '111122223333444A' | creditCardFormatter }}</p>
+  </div>
+</app-card>
+
 
 <app-card
   [iconClasses]="'fas fa-scroll fa-2x'"
