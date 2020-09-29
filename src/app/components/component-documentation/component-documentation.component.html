@@ -1,5 +1,15 @@
 
 <app-card
+[iconClasses]="'fas fa-scroll fa-2x'"
+[title]="'Credit Card Input'"
+[subTitle]="'Components'">
+<div body>
+  <app-credit-card-input [CreditCardNumber]="'4212333344445589'" [isReadonly]="false"></app-credit-card-input>
+  <app-credit-card-input [CreditCardNumber]="'1212333344445589'" [isReadonly]="true"></app-credit-card-input>
+</div>
+</app-card>
+
+<app-card
   [iconClasses]="'fas fa-scroll fa-2x'"
   [title]="'Top of the page'"
   [subTitle]="'Components'">
