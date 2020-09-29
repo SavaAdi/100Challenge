@@ -10,6 +10,7 @@ import { StarRatingsComponent } from './star-ratings/star-ratings.component';
 import { ComponentDocumentationComponent } from './component-documentation/component-documentation.component';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     StarRatingsComponent,
     AccordionComponent,
     ProgressBarComponent,
-    CreditCardInputComponent
+    CreditCardInputComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
