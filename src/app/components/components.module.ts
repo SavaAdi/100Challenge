@@ -11,6 +11,7 @@ import { ComponentDocumentationComponent } from './component-documentation/compo
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoaderComponent } from './loader/loader.component';
     AccordionComponent,
     ProgressBarComponent,
     CreditCardInputComponent,
-    LoaderComponent
+    LoaderComponent,
+    TwitterPostComponent
   ],
   imports: [
     CommonModule,

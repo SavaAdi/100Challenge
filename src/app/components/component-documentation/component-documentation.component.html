@@ -1,9 +1,16 @@
 
 <app-card
 [iconClasses]="'fas fa-scroll fa-2x'"
+[title]="'Twitter Post'"
+[subTitle]="'Components'">
+  <app-twitter-post body></app-twitter-post>
+</app-card>
+
+<app-card
+[iconClasses]="'fas fa-scroll fa-2x'"
 [title]="'Loader'"
 [subTitle]="'Components'">
-  <app-loader body [isLoading]="true" [loaderType]="loaderType"></app-loader>
+  <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 </app-card>
 
 <app-card
