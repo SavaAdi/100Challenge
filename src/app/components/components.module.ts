@@ -12,6 +12,7 @@ import { CreditCardInputComponent } from './credit-card-input/credit-card-input.
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
     ProgressBarComponent,
     CreditCardInputComponent,
     LoaderComponent,
-    TwitterPostComponent
+    TwitterPostComponent,
+    LinkedinPostComponent
   ],
   imports: [
     CommonModule,
