@@ -17,7 +17,7 @@ export class ComponentDocumentationComponent implements OnInit {
     },
     {
       title: 'The road to seniority',
-      content: 'Starts with a accordion component',
+      content: 'Starts with an accordion component',
       isExpanded: false,
     },
   ];
@@ -28,7 +28,5 @@ export class ComponentDocumentationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
 
 }

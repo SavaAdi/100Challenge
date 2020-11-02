@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pipe-documentation.component.html',
   styleUrls: ['./pipe-documentation.component.scss']
 })
-export class PipeDocumentationComponent implements OnInit {
+export class PipeDocumentationComponent {
 
-  constructor() { }
+  public flattenData = [1, 2, [3], [4, [5, 6, [7]]]];
 
-  ngOnInit(): void {
+  public modifyFlatten(): void {
+    this.flattenData.push(3, 5);
+  }
+
+  public reassignFlatten(): void {
+    // console.log(...this.flattenData);
+    // console.log('versus');
+    // console.log(this.flattenData);
+    this.flattenData = [...this.flattenData];
   }
 
 }
