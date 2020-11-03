@@ -14,6 +14,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ModalComponent } from './modal/modal.component';
     LoaderComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
-    ModalComponent
+    ModalComponent,
+    QuoteComponent
   ],
   imports: [
     CommonModule,
