@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 import { DirectiveDocumentationComponent } from './directive-documentation/directive-documentation.component';
 import { RouterModule } from '@angular/router';
 import { DIRECTIVES_ROUTES } from './directive.routes';
+import { DebounceClickDirective } from './debounce-click/debounce-click.directive';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [DirectiveDocumentationComponent],
+  declarations: [DirectiveDocumentationComponent, DebounceClickDirective],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild(DIRECTIVES_ROUTES)
   ]
 })

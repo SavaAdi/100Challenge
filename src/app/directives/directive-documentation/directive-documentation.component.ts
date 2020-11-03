@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './directive-documentation.component.html',
   styleUrls: ['./directive-documentation.component.scss']
 })
-export class DirectiveDocumentationComponent implements OnInit {
+export class DirectiveDocumentationComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public log() {
+    console.log('Hello World');
   }
 
 }

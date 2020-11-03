@@ -1,1 +1,8 @@
 <p>directive-documentation works!</p>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce Click'" [subTitle]="'Directives'">
+    <div body>
+        <!-- you need this click instead of normal click -->
+      <button appDebounceClick (debounceClick)="log()">Log</button>
+    </div>
+  </app-card>
