@@ -23,6 +23,7 @@ export class ComponentDocumentationComponent implements OnInit {
   ];
   public progressValue = 25;
   public loaderType = LoaderType.Loading;
+  public toggleValue = false;
 
   constructor() { }
 

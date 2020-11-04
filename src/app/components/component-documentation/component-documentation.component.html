@@ -1,5 +1,9 @@
 
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subTitle]="'Components'">
+  <app-toggle [isOn]="toggleValue" body></app-toggle>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'Components'">
   <app-quote body [quote]="'Get Good. Get Great. Get Better.'" [author]="'Sava D. Adrian'"
     [occupation]="'Software Engineer, Madman, & Intellectual'">
