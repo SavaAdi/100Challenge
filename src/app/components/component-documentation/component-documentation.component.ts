@@ -25,6 +25,10 @@ export class ComponentDocumentationComponent implements OnInit {
   public loaderType = LoaderType.Loading;
   public toggleValue = false;
 
+  public debounceExampleMethod(value: string): void {
+    console.log('Component Documentation', value);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
