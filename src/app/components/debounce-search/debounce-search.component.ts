@@ -11,7 +11,7 @@ import { distinctUntilChanged } from 'rxjs/operators';
 })
 export class DebounceSearchComponent {
 
-  public searchTerm = '';
+  @Input() public searchTerm = '';
 
   @Input() public placeholder = 'Search';
   @Output() public searchUpdate = new EventEmitter<string>();
