@@ -1,0 +1,33 @@
+@import '../../../styles';
+
+ul {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+
+    li {
+        display: inline;
+        list-style: none;
+        margin: 3px;
+
+        button {
+            border: none;
+            background-color: white;
+
+            @include box-shadow();
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            color: $cool;
+
+            &.current-page {
+                background-color: $cool-alt;
+                color: white;
+                transition: all 0.3;
+            }
+            
+        }
+    }
+
+
+}
