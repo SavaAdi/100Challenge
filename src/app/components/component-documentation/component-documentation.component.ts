@@ -25,6 +25,13 @@ export class ComponentDocumentationComponent implements OnInit {
   public loaderType = LoaderType.Loading;
   public toggleValue = false;
 
+
+  public tabs: { title: string, active: boolean }[] = [
+    { title: 'Tab for you', active: true },
+    { title: 'Tab for me', active: false },
+  ];
+  public selectedTab = 0;
+
   public debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value);
   }
