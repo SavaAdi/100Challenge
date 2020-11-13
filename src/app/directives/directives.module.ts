@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 import { DIRECTIVES_ROUTES } from './directive.routes';
 import { DebounceClickDirective } from './debounce-click/debounce-click.directive';
 import { SharedModule } from '../shared/shared.module';
+import { RippleDirective } from './ripple/ripple.directive';
 
 
 
 @NgModule({
-  declarations: [DirectiveDocumentationComponent, DebounceClickDirective],
+  declarations: [DirectiveDocumentationComponent, DebounceClickDirective, RippleDirective],
   imports: [
     CommonModule,
     SharedModule,
