@@ -9,7 +9,7 @@ import { COMPONENTS_ROUTES } from './component.routes';
 import { StarRatingsComponent } from './star-ratings/star-ratings.component';
 import { ComponentDocumentationComponent } from './component-documentation/component-documentation.component';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
@@ -24,6 +24,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
+import { EmailFormComponent } from './email-form/email-form.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +46,14 @@ import { SortTableComponent } from './sort-table/sort-table.component';
     SimpleTableComponent,
     PagingComponent,
     TabsComponent,
-    SortTableComponent
+    SortTableComponent,
+    EmailFormComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(COMPONENTS_ROUTES)
   ]
 })

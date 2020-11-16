@@ -1,0 +1,36 @@
+<div class="email-form-container">
+    <div class="email-container">
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+
+            <form action="" class="email-form" [formGroup]="form" (ngSubmit)="submitMessage()">
+                <div>
+                    <div class="name" [class.error]="form.controls.name.errors && form.controls.name.touched">
+                        <input type="text" placeholder="Your name" formControlName="name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <small class="error" *ngIf="form.controls.name.errors && form.controls.name.touched">
+                        Name is too short!
+                    </small>
+                </div>
+                <div>
+                    <div class="email" [class.error]="form.controls.email.errors && form.controls.email.touched">
+                        <input type="email" placeholder="Your Email" formControlName="email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <small class="error" *ngIf="form.controls.email.errors && form.controls.email.touched">
+                        Email is invalid!
+                    </small>
+                </div>
+                <div class="message">
+                    <textarea placeholder="Your message" formControlName="message"></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>           
+                
+
+               
+                <button [disabled]="form.invalid">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
