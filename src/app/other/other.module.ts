@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { OtherDocumentationComponent } from './other-documentation/other-documentation.component';
 import { OTHER_ROUTES } from './other.routes';
 import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     RouterModule.forChild(OTHER_ROUTES)
   ]
 })
-export class OtherModule { };
+export class OtherModule { }
