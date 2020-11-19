@@ -1,0 +1,50 @@
+@import '../../../styles';
+
+.ribbon {
+    width: 200px;
+    padding: 16px;
+    position: fixed;
+    text-align: center;
+    color: white;
+    z-index: 2;
+
+    &.top-right {
+        right: -50px;
+        top: 25px;
+        transform: rotate(45deg);
+    }
+
+    &.top-left {
+        left: -50px;
+        top: 25px;
+        transform: rotate(-45deg);
+    }
+
+    &.bottom-left {
+        left: -50px;
+        bottom: 25px;
+        transform: rotate(45deg);
+    }
+
+    &.bottom-right {
+        right: -50px;
+        bottom: 25px;
+        transform: rotate(-45deg);
+    }
+
+    &.success {
+        background-color: $cool;
+    }
+
+    &.info {
+        background-color: $blue;
+    }
+
+    &.error {
+        background-color: $red;
+    }
+
+    &.warning {
+        background-color: $yellow;
+    }
+}

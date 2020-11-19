@@ -1,13 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { RibbonLocation } from '../ribbon/ribbon-location.enum';
+import { RibbonType } from '../ribbon/ribbon-type.enum';
 
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
   styleUrls: ['./component-documentation.component.scss']
 })
-export class ComponentDocumentationComponent implements OnInit {
+export class ComponentDocumentationComponent {
+
+  public RibbonType = RibbonType;
+  public RibbonLocation = RibbonLocation;
+  public ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.BottomLeft };
 
   public accordionItems: AccordionItem[] = [
     {
@@ -34,11 +40,6 @@ export class ComponentDocumentationComponent implements OnInit {
 
   public debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value);
-  }
-
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
 }
