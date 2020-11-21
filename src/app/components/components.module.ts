@@ -27,6 +27,7 @@ import { SortTableComponent } from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
-    ButtonToggleComponent
+    ButtonToggleComponent,
+    BannerCutOutComponent
   ],
   imports: [
     CommonModule,
