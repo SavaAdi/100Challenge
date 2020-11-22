@@ -9,7 +9,7 @@ export class BannerCutOutComponent {
 
   @Input() public imageUrl = 'assets/jaguar-wallpaper-animal.jpg';
 
-  @Input() public title = 'Adi is awesome';
- 
+  @Input() public title = 'Stay focused';
+
 
 }
