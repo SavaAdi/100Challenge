@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { LoaderType } from '../loader/models/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -16,11 +17,16 @@ export class ComponentDocumentationComponent {
   public RibbonLocation = RibbonLocation;
   public ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.BottomLeft };
 
+  // @ViewChild('snackbar') public snackBar: SnackbarComponent; Use this if you have a template referrence with #snackbar
+  // We can use this instead of referrence because there is only one component of that type
+  @ViewChild(SnackbarComponent) public snackBar: SnackbarComponent;
+
   public buttonToggleOptions: ButtonMeta[] = [
     new ButtonMeta({ id: 1, title: 'Bold' }),
     new ButtonMeta({ id: 2, title: 'Italic' }),
     new ButtonMeta({ id: 3, title: 'Underline' }),
   ];
+
 
   public accordionItems: AccordionItem[] = [
     {
@@ -44,6 +50,10 @@ export class ComponentDocumentationComponent {
     { title: 'Tab for me', active: false },
   ];
   public selectedTab = 0;
+
+  public snackbarShow(): void {
+    this.snackBar.show();
+  }
 
   public debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value);

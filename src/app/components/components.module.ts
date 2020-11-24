@@ -28,6 +28,7 @@ import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
-    BannerCutOutComponent
+    BannerCutOutComponent,
+    SnackbarComponent
   ],
   imports: [
     CommonModule,

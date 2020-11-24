@@ -1,4 +1,11 @@
 
+ <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subTitle]="'Components'">
+  <div body>
+    <app-snackbar [message]="'Snackbar Example'"></app-snackbar>
+    <button (click)="snackbarShow()">Show Snackbar</button>
+  </div>
+</app-card>
+
  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Banner Cut Out'" [subTitle]="'Components'">
   <app-banner-cut-out body [title]="'Stay focused'"></app-banner-cut-out>
 </app-card>
