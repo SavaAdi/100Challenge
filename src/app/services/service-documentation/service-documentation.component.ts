@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SnackbarService } from '../snackbar/snackbar.service';
 import { User } from '../user/user.model';
 import { UserService } from '../user/user.service';
 
@@ -11,7 +12,8 @@ export class ServiceDocumentationComponent implements OnInit {
 
   public user = new User();
 
-  constructor(public userService: UserService) { }
+  constructor(public userService: UserService,
+              public snackbarService: SnackbarService) { }
 
   ngOnInit(): void {
 
@@ -27,6 +29,10 @@ export class ServiceDocumentationComponent implements OnInit {
         console.log('Done loading');
       }
     });
+  }
+
+  public callSnackbar(): void {
+    this.snackbarService.callSnackbar('Snackbar Service Example');
   }
 
 }

@@ -52,7 +52,7 @@ export class ComponentDocumentationComponent {
   public selectedTab = 0;
 
   public snackbarShow(): void {
-    this.snackBar.show();
+    this.snackBar.showMessage('I am passing a message');
   }
 
   public debounceExampleMethod(value: string): void {

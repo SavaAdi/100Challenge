@@ -28,7 +28,6 @@ import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
-import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
@@ -57,7 +56,6 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutOutComponent,
-    SnackbarComponent,
     SimplePopupComponent,
     CountdownTimerComponent
   ],
