@@ -7,15 +7,20 @@ import { DebounceClickDirective } from './debounce-click/debounce-click.directiv
 import { SharedModule } from '../shared/shared.module';
 import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirectiveDirective } from './scale/scale-directive.directive';
+import { CopyDirective } from './copy/copy.directive';
 
 
 
 @NgModule({
-  declarations: [DirectiveDocumentationComponent, DebounceClickDirective, RippleDirective, ScaleDirectiveDirective],
+  declarations: [DirectiveDocumentationComponent, DebounceClickDirective, RippleDirective, ScaleDirectiveDirective, CopyDirective],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule.forChild(DIRECTIVES_ROUTES)
+  ],
+  providers: [
+    { provide: 'Navigator', useValue: navigator },
+    { provide: 'Document', useValue: document }
   ]
 })
 export class DirectivesModule { }
