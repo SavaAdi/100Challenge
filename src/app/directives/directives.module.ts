@@ -8,11 +8,13 @@ import { SharedModule } from '../shared/shared.module';
 import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirectiveDirective } from './scale/scale-directive.directive';
 import { CopyDirective } from './copy/copy.directive';
+import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.directive';
 
 
 
 @NgModule({
-  declarations: [DirectiveDocumentationComponent, DebounceClickDirective, RippleDirective, ScaleDirectiveDirective, CopyDirective],
+  declarations: [DirectiveDocumentationComponent,
+     DebounceClickDirective, RippleDirective, ScaleDirectiveDirective, CopyDirective, LazyLoadImageDirective],
   imports: [
     CommonModule,
     SharedModule,
@@ -20,7 +22,8 @@ import { CopyDirective } from './copy/copy.directive';
   ],
   providers: [
     { provide: 'Navigator', useValue: navigator },
-    { provide: 'Document', useValue: document }
+    { provide: 'Document', useValue: document },
+    { provide: 'Window', useValue: window }
   ]
 })
 export class DirectivesModule { }
