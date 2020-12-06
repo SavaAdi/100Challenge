@@ -30,6 +30,7 @@ import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { FooterComponent } from './footer/footer.component';
     BannerCutOutComponent,
     SimplePopupComponent,
     CountdownTimerComponent,
-    FooterComponent
+    FooterComponent,
+    SkeletonLoaderComponent
   ],
   imports: [
     CommonModule,

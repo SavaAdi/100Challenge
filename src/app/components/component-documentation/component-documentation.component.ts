@@ -50,6 +50,8 @@ export class ComponentDocumentationComponent {
     { title: 'Tab for me', active: false },
   ];
   public selectedTab = 0;
+  
+  public loaded = false;
 
   public snackbarShow(): void {
     this.snackBar.showMessage('I am passing a message');
