@@ -5,6 +5,8 @@ import { LoaderType } from '../loader/models/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
+import { SocialMedia } from '../social-media-bar/models/social-media.enum';
 
 @Component({
   selector: 'app-component-documentation',
@@ -50,8 +52,16 @@ export class ComponentDocumentationComponent {
     { title: 'Tab for me', active: false },
   ];
   public selectedTab = 0;
-  
+
   public loaded = false;
+
+  public socialMedia: SocialMediaIcon[] = [
+    { href: 'https://www.facebook.com', type: SocialMedia.Facebook },
+    { href: 'https://www.instagram.com', type: SocialMedia.Instagram },
+    { href: 'https://www.linkedin.com', type: SocialMedia.LinkedIn },
+    { href: 'https://twitter.com', type: SocialMedia.Twitter },
+    { href: 'https://www.youtube.com', type: SocialMedia.YouTube },
+  ];
 
   public snackbarShow(): void {
     this.snackBar.showMessage('I am passing a message');

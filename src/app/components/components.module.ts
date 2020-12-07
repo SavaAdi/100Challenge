@@ -31,6 +31,7 @@ import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
+import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.compo
     SimplePopupComponent,
     CountdownTimerComponent,
     FooterComponent,
-    SkeletonLoaderComponent
+    SkeletonLoaderComponent,
+    SocialMediaBarComponent
   ],
   imports: [
     CommonModule,
