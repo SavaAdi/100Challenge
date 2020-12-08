@@ -32,6 +32,7 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
 import { FooterComponent } from './footer/footer.component';
 import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
 import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.com
     CountdownTimerComponent,
     FooterComponent,
     SkeletonLoaderComponent,
-    SocialMediaBarComponent
+    SocialMediaBarComponent,
+    BottomSheetComponent
   ],
   imports: [
     CommonModule,

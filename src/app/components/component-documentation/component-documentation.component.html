@@ -1,4 +1,17 @@
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Bottom Sheet'" [subTitle]="'Components'">
+  <div body>
+    <app-bottom-sheet #bottomSheet>
+      <h1 (click)="bottomSheet.hide()">Hello</h1>
+      <h1 (click)="bottomSheet.hide()">World</h1>
+    </app-bottom-sheet>
+
+    <div class="footer" footer>
+      <button (click)="bottomSheet.show()">Show</button>
+    </div>
+  </div>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Social Media Bar'" [subTitle]="'Components'">
   <div body>
     <app-social-media-bar [socialMedia]="socialMedia"></app-social-media-bar>
@@ -13,9 +26,8 @@
       deserunt delectus assumenda et enim adipisci. Rem deserunt nisi inventore cupiditate repudiandae, nesciunt
       aspernatur non nostrum.</p>
   </div>
-
+  
   <button footer (click)="loaded = !loaded">Toggle</button>
-
 </app-card>
 
  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Footer'" [subTitle]="'Components'">
