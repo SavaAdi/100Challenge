@@ -2,11 +2,13 @@ import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { PillType } from '../pill/pill-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
 import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
 import { SocialMedia } from '../social-media-bar/models/social-media.enum';
+ 
 
 @Component({
   selector: 'app-component-documentation',
@@ -62,6 +64,8 @@ export class ComponentDocumentationComponent {
     { href: 'https://twitter.com', type: SocialMedia.Twitter },
     { href: 'https://www.youtube.com', type: SocialMedia.YouTube },
   ];
+
+  public PillType = PillType;
 
   public snackbarShow(): void {
     this.snackBar.showMessage('I am passing a message');
