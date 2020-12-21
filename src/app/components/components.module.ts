@@ -35,6 +35,7 @@ import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.com
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PillComponent } from './pill/pill.component';
+import { PillFiltersComponent } from './pill-filters/pill-filters.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { PillComponent } from './pill/pill.component';
     SocialMediaBarComponent,
     BottomSheetComponent,
     FieldsetComponent,
-    PillComponent
+    PillComponent,
+    PillFiltersComponent
   ],
   imports: [
     CommonModule,
