@@ -37,6 +37,7 @@ import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PillComponent } from './pill/pill.component';
 import { PillFiltersComponent } from './pill-filters/pill-filters.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PasswordComponent } from './password/password.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FieldsetComponent,
     PillComponent,
     PillFiltersComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PasswordComponent
   ],
   imports: [
     CommonModule,
