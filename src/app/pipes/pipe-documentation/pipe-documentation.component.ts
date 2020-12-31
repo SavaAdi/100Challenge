@@ -11,6 +11,13 @@ export class PipeDocumentationComponent {
   public html = '<a href="https://www.YouTube.com/Codingtutorials360" target="blank">YouTube </a>';
 
   public stringArray: string[] = ['Courses', 'YouTube', 'Twitter', 'LinkedIn'];
+  public objectArray: { [key: string]: string; }[] = [
+    { content: 'Fitness' },
+    { content: 'Intellect' },
+    { content: 'Soft skills' },
+    { content: 'Professional skills' },
+    { content: 'Artistic skills' }
+  ];
 
   public modifyFlatten(): void {
     this.flattenData.push(3, 5);
