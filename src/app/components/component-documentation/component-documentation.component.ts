@@ -66,6 +66,7 @@ export class ComponentDocumentationComponent {
   ];
 
   public PillType = PillType;
+  public isShownOverlay = false;
 
   public snackbarShow(): void {
     this.snackBar.showMessage('I am passing a message');
