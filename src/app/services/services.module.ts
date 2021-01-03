@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SERVICES_ROUTES } from './service.routes';
 import { SharedModule } from '../shared/shared.module';
 import { UserService } from './user/user.service';
+import { LocalStorageService } from './local-storage/local-storage.service';
 
 
 
@@ -17,7 +18,11 @@ import { UserService } from './user/user.service';
     HttpClientModule,
     RouterModule.forChild(SERVICES_ROUTES)
   ],
-  providers: [UserService]
+  providers: [
+    UserService,
+    LocalStorageService,
+    { provide: 'LocalStorage', useValue: window.localStorage }
+]
 })
 export class ServicesModule { }
 
