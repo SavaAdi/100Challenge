@@ -6,8 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test:coverage": "ng test --codeCoverage",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lint:fix": "ng lint --fix",
+    "clean": "rimraf dist && rimraf coverage",
+    "pre-commit": "npm run lint:fix"
   },
   "private": true,
   "dependencies": {
