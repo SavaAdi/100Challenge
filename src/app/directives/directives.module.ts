@@ -9,12 +9,13 @@ import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirectiveDirective } from './scale/scale-directive.directive';
 import { CopyDirective } from './copy/copy.directive';
 import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.directive';
+import { AutoFocusDirective } from './auto-focus/auto-focus.directive';
 
 
 
 @NgModule({
   declarations: [DirectiveDocumentationComponent,
-     DebounceClickDirective, RippleDirective, ScaleDirectiveDirective, CopyDirective, LazyLoadImageDirective],
+     DebounceClickDirective, RippleDirective, ScaleDirectiveDirective, CopyDirective, LazyLoadImageDirective, AutoFocusDirective],
   imports: [
     CommonModule,
     SharedModule,

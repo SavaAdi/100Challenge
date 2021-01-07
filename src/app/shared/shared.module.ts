@@ -4,6 +4,7 @@ import { CardComponent } from '../components/card/card.component';
 import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
 import { SnackbarComponent } from '../components/snackbar/snackbar.component';
 import { TabsComponent } from '../components/tabs/tabs.component';
+import { ModalComponent } from '../components/modal/modal.component';
 
 
 @NgModule({
@@ -11,13 +12,15 @@ import { TabsComponent } from '../components/tabs/tabs.component';
     CardComponent,
     FilterTermPipe,
     SnackbarComponent,
-    TabsComponent
+    TabsComponent,
+    ModalComponent
   ],
   exports: [
     CardComponent,
     FilterTermPipe,
     SnackbarComponent,
-    TabsComponent
+    TabsComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule

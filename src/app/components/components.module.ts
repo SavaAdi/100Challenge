@@ -13,7 +13,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
-import { ModalComponent } from './modal/modal.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
@@ -50,7 +49,6 @@ import { OverlayComponent } from './overlay/overlay.component';
     LoaderComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
-    ModalComponent,
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,
