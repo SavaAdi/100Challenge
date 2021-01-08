@@ -3,10 +3,6 @@ import { Directive, ElementRef, AfterContentInit } from '@angular/core';
 @Directive({
   selector: '[appAutoFocus]'
 })
-
-@Directive({
-  selector: '[appAutoFocus]'
-})
 export class AutoFocusDirective implements AfterContentInit {
 
   constructor(public el: ElementRef<HTMLInputElement>) { }
